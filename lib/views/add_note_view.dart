@@ -5,7 +5,6 @@ import 'package:notes_app/cubits/notes_cubit/notes_cubit.dart';
 import 'package:notes_app/views/settings_view.dart';
 import 'package:notes_app/views/widgets/add_note_form.dart';
 import 'package:notes_app/views/widgets/custom_app_bar.dart';
-import 'package:notes_app/views/widgets/custom_button.dart';
 
 class AddNoteView extends StatelessWidget {
   const AddNoteView({super.key});
@@ -47,13 +46,7 @@ class AddNoteView extends StatelessWidget {
                       },
                     ),
                     AddNoteForm(),
-                    CustomButton(
-                      width: MediaQuery.of(context).size.width,
-                      action: 'Cancel',
-                      onTap: () {
-                        Navigator.pop(context);
-                      },
-                    ),
+                   
                   ],
                 ),
               ),

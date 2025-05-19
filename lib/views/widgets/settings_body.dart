@@ -10,7 +10,7 @@ import 'package:notes_app/views/widgets/custom_dialog.dart';
 
 class SettingsBody extends StatelessWidget {
   const SettingsBody({super.key});
-  final bool value = false;
+  
   @override
   Widget build(BuildContext context) {
     final isLightMode = context.watch<ThemeCubit>().state == ThemeMode.light;

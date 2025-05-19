@@ -54,6 +54,13 @@ class _AddNoteFormState extends State<AddNoteForm> {
                 );
               },
             ),
+            CustomButton(
+              width: MediaQuery.of(context).size.width,
+              action: 'Cancel',
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
           ],
         ),
       ),
